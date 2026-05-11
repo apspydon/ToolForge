@@ -92,7 +92,7 @@ The script installs all needed dependencies (Go, Rust, Python3, pip, git, dotnet
 🛠️ Customization
 
 To add your own tool, edit the read_tools_db function in ToolForge.sh and insert a new line with the format:
-> "category|type|toolname|repo_url|install_command"
+> category|type|toolname|repo_url|install_command
 
 Then write an interactive runner function (e.g. run_mytool()) and add a case entry in the run_tool dispatch.
 
