@@ -1,5 +1,3 @@
-# 🔧 ToolForge – Ethical Hacking Toolkit Manager
-
 **ToolForge** is a powerful, all‑in‑one terminal‑based manager that installs, runs, and organizes **200+ ethical hacking tools** from a single menu. It works on **macOS, Kali Linux, Ubuntu, Termux**, and any other Linux distribution. No more manual `git clone`, `make`, or `pip install` – ToolForge does everything for you interactively.
 
 > 🚀 **One script to forge your entire pentesting arsenal.**
@@ -77,7 +75,9 @@ To add your own tool, edit the read_tools_db function in ToolForge.sh and insert
 text
 category|type|toolname|repo_url|install_command
 Then write an interactive runner function (e.g. run_mytool()) and add a case entry in the run_tool dispatch.
+
 The script stores all cloned tools in ~/toolforge/. You can delete that folder to remove every tool.
+
 🙏 Credits
 
 All tools belong to their respective authors (repositories linked in the script).
