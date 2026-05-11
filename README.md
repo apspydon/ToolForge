@@ -19,6 +19,7 @@
 
 ## 📦 Installation
 
+```bash
 git clone https://github.com/apspydon/ToolForge.git
 cd ToolForge
 chmod +x ToolForge.sh
