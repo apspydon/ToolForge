@@ -1,3 +1,4 @@
+
 **ToolForge** is a powerful, all‑in‑one terminal‑based manager that installs, runs, and organizes **200+ ethical hacking tools** from a single menu. It works on **macOS, Kali Linux, Ubuntu, Termux**, and any other Linux distribution. No more manual `git clone`, `make`, or `pip install` – ToolForge does everything for you interactively.
 
 > 🚀 **One script to forge your entire pentesting arsenal.**
@@ -25,16 +26,34 @@ cd ToolForge
 chmod +x ToolForge.sh
 sudo ./ToolForge.sh
 ```
+Note: Root/sudo is required because many tools need raw socket access or install system‑wide binaries.
+
 🎮 How To Use
 
 Run the script with sudo ./ToolForge.sh
 The main menu shows 19 options:
 
-1 – Install & run NETEEN (your own network assessment tool)
-2…17 – Enter tool categories (e.g. Information Gathering, Wireless Attacks)
-18 – Install all tools from every category
-19 – Open the GitHub profile of apspydon
-0 – Exit
+1) NETEEN (my personal tool)
+2) Information Gathering
+3) Vulnerability Analysis
+4) Web Application Hacking
+5) Password Attacks
+6) Wireless Attacks
+7) Exploitation Frameworks
+8) Post Exploitation
+9) Forensics
+10) Sniffing & Spoofing
+11) Social Engineering
+12) Reverse Engineering
+13) OSINT
+14) Network Utilities
+15) Red Teaming & C2
+16) Database Hacking
+17) All‑in‑One Swiss Army
+18) Install ALL tools
+19) Visit my GitHub
+0) Exit
+
 Inside a category menu:
 
 Type a number to install that specific tool, then choose to run it immediately
@@ -63,6 +82,7 @@ Red Teaming & C2	covenant, starkiller, poshc2, pupy
 Database Hacking	bbqsql, blisqy, patator, hydra, ncrack, sqlmap, nosqlmap
 All‑in‑One Swiss Army	metasploit-framework, nmap, bettercap, beef, setoolkit, bloodhound, sqlmap, john, hydra
 Note: NETEEN appears both in the main menu and as the first tool in the Wireless Attacks category.
+
 ⚙️ Requirements
 
 macOS: Homebrew will be installed automatically if missing.
@@ -72,9 +92,8 @@ The script installs all needed dependencies (Go, Rust, Python3, pip, git, dotnet
 🛠️ Customization
 
 To add your own tool, edit the read_tools_db function in ToolForge.sh and insert a new line with the format:
+> "category|type|toolname|repo_url|install_command"
 
-text
-category|type|toolname|repo_url|install_command
 Then write an interactive runner function (e.g. run_mytool()) and add a case entry in the run_tool dispatch.
 
 The script stores all cloned tools in ~/toolforge/. You can delete that folder to remove every tool.
@@ -90,3 +109,6 @@ This project is licensed under the MIT License – feel free to use, modify, and
 ⚠️ Disclaimer
 
 ToolForge is intended only for ethical hacking, penetration testing, and educational purposes. Do not use any tool on systems you do not own or have explicit permission to test. The author is not responsible for any misuse or damage caused by this software.
+
+
+## Run and Enjoy!
