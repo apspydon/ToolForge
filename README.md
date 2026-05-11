@@ -24,7 +24,7 @@ git clone https://github.com/apspydon/ToolForge.git
 cd ToolForge
 chmod +x ToolForge.sh
 sudo ./ToolForge.sh
-Note: Root/sudo is required because many tools need raw socket access or install system‑wide binaries.
+```
 🎮 How To Use
 
 Run the script with sudo ./ToolForge.sh
