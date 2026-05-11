@@ -89,6 +89,7 @@ macOS: Homebrew will be installed automatically if missing.
 Linux: apt or yum (Debian/Ubuntu recommended – the script uses apt-get).
 Termux: pkg package manager.
 The script installs all needed dependencies (Go, Rust, Python3, pip, git, dotnet, npm) on the fly – you don’t need to prepare anything.
+
 🛠️ Customization
 
 To add your own tool, edit the read_tools_db function in ToolForge.sh and insert a new line with the format:
