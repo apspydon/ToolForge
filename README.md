@@ -103,6 +103,7 @@ The script stores all cloned tools in ~/toolforge/. You can delete that folder t
 
 All tools belong to their respective authors (repositories linked in the script).
 ToolForge created by apspydon – a unified launcher for the ethical hacking community.
+
 📜 License
 
 This project is licensed under the MIT License – feel free to use, modify, and distribute.
